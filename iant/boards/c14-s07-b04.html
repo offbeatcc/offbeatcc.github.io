@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Inequality in the Note After Theorem 14.5</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Inequality in the Note After Theorem 14.5
+
+We first obtained,
+$$
+\log p(n) < \log F(x) + n \log \frac{1}{x} + \log(1 - x).
+$$
+
+We have also shown that $ \log(1 - x) = \log t - \log\frac{1}{x} $. Thus
+\begin{align*}
+  \log p(n)
+  &< \log F(x) + n \log \frac{1}{x} + \log t - \log\frac{1}{x} \\
+  &= \log F(x) + (n - 1) \log\frac{1}{x} + \log t.
+\end{align*}
+
+Now we use the inequalities
+$$
+\log F(x) \le \frac{\pi^2}{6t}\qquad\text{ and }\qquad
+\log \frac{1}{x} < t
+$$
+to obtain
+$$
+\log p(n)
+< \frac{\pi^2}{6t} + (n - 1)t + \log t
+< \underbrace{\frac{\pi^2}{6t} + nt + \log t.}_{\text{We will denote this as } f(t)}
+$$
+
+</div>
+</textarea>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>A Step in the Proof of Theorem 4.5</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# A Step in the Proof of Theorem 4.5
+
+\begin{align*}
+\lim_{n \to \infty} \frac{(n + 1) \log (n + 1)}{n \log n}
+& = \left( \lim_{n \to \infty} \frac{n + 1}{n} \right)
+    \left( \lim_{n \to \infty} \frac{\log (n + 1)}{n \log n} \right) \\
+& = \left( \lim_{n \to \infty} \left( 1 + \frac{1}{n} \right) \right)
+     \left( \lim_{n \to \infty} \frac{\log n\left( 1 + \frac{1}{n} \right)}{\log n} \right) \\
+& = \lim_{n \to \infty} \frac{\log n + \log \left( 1 + \frac{1}{n} \right)}{\log n} \\
+& = 1.
+\end{align*}
+  
+</div>
+</textarea>

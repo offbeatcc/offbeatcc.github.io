@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Two Sets: Solution for \( [k .. k - m + 1] \) With Alternate Integers</title>
+<script>window.muboard = { texmeURL: "../../../js/texme/texme.js" }; window.texme = { markdownURL: "../../../js/marked/marked.min.js", MathJaxURL: "../../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<section>
+<section>
+
+# Two Sets: Solution for \( [k \, .. k + m - 1] \) With Alternate Integers
+
+## Illustration
+
+```
+ .-----------------------------------------------------------------.
+ |           .-----------------------------------------.           |
+ |           |           .-----------------.           |           |
+ |           |           |                 |           |           |
+ k    k+1   k+2   k+3   k+4   k+5   k+6   k+7   k+8   k+9   k+10  k+11
+       |           |           |     |           |           |
+       |           |           `-----'           |           |
+       |           `-----------------------------'           |
+       `-----------------------------------------------------'
+```
+
+</section>
+<section>
+
+## Solution
+
+For each integer \( i \) of the same parity as \( k \) in \( [k \, ..
+k + m/2) \), print \( i \) and its complement.
+
+For each \( i \) of the same parity as \( k + 1 \) in \( [k + 1 \, ..
+k + m/2) \), print \( i \) and its complement.
+
+</section>
+</section>
+</textarea>

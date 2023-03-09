@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Introduction to Analytic Number Theory (IANT) Meeting Notes - Offbeat Computation Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <style>
+      a:empty:before {content: "#"}
+      a:empty {visibility: hidden; padding-left: 0.25em}
+      :hover > a:empty {visibility: visible}
+    </style>
+    <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } }</script>
+    <script src="../../js/mathjax/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <h1>IANT Meeting Notes</h1>
+    <p>
+      This page contains an archive of scribbling boards from our book
+      club meetings on
+      is <a href="https://www.springer.com/gp/book/9780387901633">Apostol,
+      Introduction to Analytic Number Theory</a>.
+    </p>
+    <p>
+      Note that this set of boards is not meant to be a systematic
+      exposition of analytic number theory. Instead this is just a
+      collection of examples that illustrate some of the theorems in
+      the reference textbook and intermediate steps that are not
+      explicitly expressed in the book. These boards were used to aid
+      the discussions during our book club meetings. As a result, the
+      content of these boards is informal in nature and is not
+      intended to be a substitute for the book or the actual book club
+      meetings.
+    </p>
+    <p>
+      If you find any mistakes in the content of the board files, please
+      <a href="https://github.com/offbeatcc/iant/issues/new">create a
+      new issue</a>
+      or <a href="https://github.com/offbeatcc/iant/">send a pull
+      request</a>.
+    </p>
+    <!-- begin chapters -->
+    <ul>
+      <li id="c02"><strong>Chapter 2: Arithmetical Functions and Dirichlet Multiplication</strong><a href="#c02"></a>
+        <ul>
+          <li id="c02-s11">&sect; 2.11: The Inverse of a Completely Multiplicative Function<a href="#c02-s11"></a>
+            <ul>
+              <li id="c02-s11-b01"><a href="c02-s11-b01.html">Some Steps in the Proof of Theorem 2.17</a></li>
+              <li id="c02-s11-b02"><a href="c02-s11-b02.html">More Steps in the Proof of Theorem 2.17</a></li>
+              <li id="c02-s11-b03"><a href="c02-s11-b03.html">Additional Notes on Theorem 2.17</a></li>
+              <li id="c02-s11-b04"><a href="c02-s11-b04.html">Proof of Theorem 2.18</a></li>
+            </ul>
+          </li>
+          <li id="c02-s15">&sect; 2.15: Formal Power Series<a href="#c02-s15"></a>
+            <ul>
+              <li id="c02-s15-b01"><a href="c02-s15-b01.html">Product of Formal Power Series</a></li>
+              <li id="c02-s15-b02"><a href="c02-s15-b02.html">Commutativity of Product of Formal Power Series</a></li>
+              <li id="c02-s15-b03"><a href="c02-s15-b03.html">Distributivity of Multiplication Over Addition in Formal Power Series</a></li>
+              <li id="c02-s15-b04"><a href="c02-s15-b04.html">Inverse of Power Series</a></li>
+            </ul>
+          </li>
+          <li id="c02-s16">&sect; 2.16: The Bell Series of an Arithmetical Function<a href="#c02-s16"></a>
+            <ul>
+              <li id="c02-s16-b01"><a href="c02-s16-b01.html">Bell Series of $ f $ modulo $ p $</a></li>
+            </ul>
+          </li>
+          <li id="c02-s17">&sect; 2.17: Bell Series and Dirichlet Multiplication<a href="#c02-s17"></a>
+            <ul>
+              <li id="c02-s17-b01"><a href="c02-s17-b01.html">Bell Series Multiplication and Dirichlet Multiplication</a></li>
+              <li id="c02-s17-b02"><a href="c02-s17-b02.html">Bell Series Multiplication and Dirichlet Multiplication: Example 1</a></li>
+              <li id="c02-s17-b03"><a href="c02-s17-b03.html">Bell Series Multiplication and Dirichlet Multiplication: Example 2</a></li>
+              <li id="c02-s17-b04"><a href="c02-s17-b04.html">Bell Series Multiplication and Dirichlet Multiplication: Example 3</a></li>
+            </ul>
+          </li>
+          <li id="c02-s18">&sect; 2.18: Derivatives of Arithmetical Functions<a href="#c02-s18"></a>
+            <ul>
+              <li id="c02-s18-b01"><a href="c02-s18-b01.html">Similarity of Ordinary Derivative and Special Derivative</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c03"><strong>Chapter 3: Averages of Arithmetical Functions</strong><a href="#c03"></a>
+        <ul>
+          <li id="c03-s03">&sect; 3.3: Euler's Summation Formula<a href="#c03-s03"></a>
+            <ul>
+              <li id="c03-s03-b01"><a href="c03-s03-b01.html">Main Idea Behind the Proof of Euler's Summation Formula</a></li>
+              <li id="c03-s03-b02"><a href="c03-s03-b02.html">Sum of Integrals in the Proof of Euler's Summation Formula</a></li>
+              <li id="c03-s03-b03"><a href="c03-s03-b03.html">Equation (6) in the Proof of Euler's Summation Formula</a></li>
+              <li id="c03-s03-b04"><a href="c03-s03-b04.html">Using Integration by Parts in the Proof of Euler's Summation Formula</a></li>
+            </ul>
+          </li>
+          <li id="c03-s04">&sect; 3.4: Some Elementary Asymptotic Formulas<a href="#c03-s04"></a>
+            <ul>
+              <li id="c03-s04-b01"><a href="c03-s04-b01.html">Splitting Integral in Proof of Theorem 3.2</a></li>
+              <li id="c03-s04-b02"><a href="c03-s04-b02.html">Euler's Constant In the Proof of Theorem 3.2 (a)</a></li>
+              <li id="c03-s04-b03"><a href="c03-s04-b03.html">Some Integrals in Proof of Theorem 3.2 (b)</a></li>
+            </ul>
+          </li>
+          <li id="c03-s05">&sect; 3.5: The Average Order of $ d(n) $<a href="#c03-s05"></a>
+            <ul>
+              <li id="c03-s05-b01"><a href="c03-s05-b01.html">Rearrangement of Summations</a></li>
+            </ul>
+          </li>
+          <li id="c03-s11">&sect; 3.11: Applications to $ \mu(n) $ and $ \Lambda(n) $<a href="#c03-s11"></a>
+            <ul>
+              <li id="c03-s11-b01"><a href="c03-s11-b01.html">Final Step of Theorem 3.13</a></li>
+              <li id="c03-s11-b02"><a href="c03-s11-b02.html">Illustration of Legendre's Identity</a></li>
+              <li id="c03-s11-b03"><a href="c03-s11-b03.html">Illustration of the Proof of Legendre's Identity</a></li>
+            </ul>
+          </li>
+          <li id="c03-s12">&sect; 3.12: Another Identity for the Partial Sums of a Dirichlet Product<a href="#c03-s12"></a>
+            <ul>
+              <li id="c03-s12-b01"><a href="c03-s12-b01.html">Notation for Theorem 3.17</a></li>
+              <li id="c03-s12-b02"><a href="c03-s12-b02.html">Theorem 3.10 as a Special Case of Theorem 3.17</a></li>
+              <li id="c03-s12-b03"><a href="c03-s12-b03.html">Some Steps in Proof of Theorem 3.17</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c04"><strong>Chapter 4: Some Elementary Theorems on the Distribution of Prime Numbers</strong><a href="#c04"></a>
+        <ul>
+          <li id="c04-s02">&sect; 4.2: Chebyshev's Functions $ \psi(x) $ and $ \vartheta(x) $<a href="#c04-s02"></a>
+            <ul>
+              <li id="c04-s02-b01"><a href="c04-s02-b01.html">Illustration of $ \psi(x) $ and $ \vartheta(x) $</a></li>
+              <li id="c04-s02-b02"><a href="c04-s02-b02.html">Some Steps in the Proof of Theorem 4.1</a></li>
+            </ul>
+          </li>
+          <li id="c04-s03">&sect; 4.3: Relations Connecting $ \vartheta(x) $ and $ \pi(x) $<a href="#c04-s03"></a>
+            <ul>
+              <li id="c04-s03-b01"><a href="c04-s03-b01.html">Some Steps in the Proof of Abel's Identity</a></li>
+              <li id="c04-s03-b02"><a href="c04-s03-b02.html">From Abel's Identity to Euler's Summation Formula</a></li>
+              <li id="c04-s03-b03"><a href="c04-s03-b03.html">Integration by Parts to Obtain Euler's Summation Formula From Abel's Identity</a></li>
+            </ul>
+          </li>
+          <li id="c04-s04">&sect; 4.4: Some Equivalent Forms of the Prime Number Theorem<a href="#c04-s04"></a>
+            <ul>
+              <li id="c04-s04-b01"><a href="c04-s04-b01.html">A Step in the Proof of Theorem 4.5</a></li>
+            </ul>
+          </li>
+          <li id="c04-s05">&sect; 4.5: Inequalities for $ \pi(n) $ and $ p_n $<a href="#c04-s05"></a>
+            <ul>
+              <li id="c04-s05-b01"><a href="c04-s05-b01.html">Notes on the Proof of Theorem 4.5</a></li>
+              <li id="c04-s05-b02"><a href="c04-s05-b02.html">Notes on the Proof of Theorem 4.7</a></li>
+            </ul>
+          </li>
+          <li id="c04-s06">&sect; 4.6: Shapiro's Tauberian Theorem<a href="#c04-s06"></a>
+            <ul>
+              <li id="c04-s06-b01"><a href="c04-s06-b01.html">Notes on the Proof of Theorem 4.8</a></li>
+            </ul>
+          </li>
+          <li id="c04-s08">&sect; 4.8: An Asymptotic Formula for the Partial Sums $ \sum_{p le x} (1/p) $<a href="#c04-s08"></a>
+            <ul>
+              <li id="c04-s08-b01"><a href="c04-s08-b01.html">From $ \sum_{p \le x} \frac{\log p}{p} $ to $ \sum_{n \le x} a(n) \frac{\log n}{n} $</a></li>
+              <li id="c04-s08-b02"><a href="c04-s08-b02.html">Applying Abel's Identity in $ \sum_{p \le x} (1/p) $</a></li>
+            </ul>
+          </li>
+          <li id="c04-s09">&sect; 4.9: The Partial Sums of the Möbius Function<a href="#c04-s09"></a>
+            <ul>
+              <li id="c04-s09-b01"><a href="c04-s09-b01.html">Applying Möbius Inversion Formula in Theorem 4.14</a></li>
+              <li id="c04-s09-b02"><a href="c04-s09-b02.html">Applying Theorem 3.10 in Theorem 4.14</a></li>
+              <li id="c04-s09-b03"><a href="c04-s09-b03.html">Applying Theorem 3.13 in Theorem 4.14</a></li>
+              <li id="c04-s09-b04"><a href="c04-s09-b04.html">The Little-o Notation</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c05"><strong>Chapter 5: Congruences</strong><a href="#c05"></a>
+        <ul>
+          <li id="c05-s01">&sect; 5.1: Definition and Basic Properties of Congruences<a href="#c05-s01"></a>
+            <ul>
+              <li id="c05-s01-b01"><a href="c05-s01-b01.html">Illustration of Theorem 5.1: Reflexivity, Symmetry, and Transitivity</a></li>
+              <li id="c05-s01-b02"><a href="c05-s01-b02.html">Illustration of Theorem 5.2: Addition, Subtraction, and Multiplication</a></li>
+              <li id="c05-s01-b03"><a href="c05-s01-b03.html">Illustrations of Theorems 5.3 and 5.4: Cancellation Laws</a></li>
+              <li id="c05-s01-b04"><a href="c05-s01-b04.html">Illustrations of Theorems 5.5-5.9</a></li>
+            </ul>
+          </li>
+          <li id="c05-s02">&sect; 5.2: Residue Classes and Complete Residue Systems<a href="#c05-s02"></a>
+            <ul>
+              <li id="c05-s02-b01"><a href="c05-s02-b01.html">Example of Residue Classes and Complete Residue System</a></li>
+              <li id="c05-s02-b02"><a href="c05-s02-b02.html">Illustration of Theorem 5.11</a></li>
+            </ul>
+          </li>
+          <li id="c05-s03">&sect; 5.3: Linear Congruences<a href="#c05-s03"></a>
+            <ul>
+              <li id="c05-s03-b01"><a href="c05-s03-b01.html">Illustration of Theorem 5.12</a></li>
+              <li id="c05-s03-b02"><a href="c05-s03-b02.html">Illustration of Theorem 5.13</a></li>
+              <li id="c05-s03-b03"><a href="c05-s03-b03.html">Illustration of Theorem 5.14</a></li>
+              <li id="c05-s03-b04"><a href="c05-s03-b04.html">Illustration of Theorem 5.14</a></li>
+            </ul>
+          </li>
+          <li id="c05-s04">&sect; 5.4: Reduced Residue Systems and the Euler-Fermat Theorem<a href="#c05-s04"></a>
+            <ul>
+              <li id="c05-s04-b01"><a href="c05-s04-b01.html">Reduced Residue System</a></li>
+              <li id="c05-s04-b02"><a href="c05-s04-b02.html">Illustration of Theorem 5.16</a></li>
+              <li id="c05-s04-b03"><a href="c05-s04-b03.html">Illustration of Theorem 5.17: Euler-Fermat Theorem</a></li>
+              <li id="c05-s04-b04"><a href="c05-s04-b04.html">Illustration of Theorem 5.18</a></li>
+              <li id="c05-s04-b05"><a href="c05-s04-b05.html">Illustration of Theorem 5.19: Little Fermat Theorem</a></li>
+            </ul>
+          </li>
+          <li id="c05-s05">&sect; 5.5: Polynomial Congruences Modulo $ p $. Lagrange's Theorem<a href="#c05-s05"></a>
+            <ul>
+              <li id="c05-s05-b01"><a href="c05-s05-b01.html">Illustration of Theorem 5.21: Lagrange's Theorem</a></li>
+              <li id="c05-s05-b02"><a href="c05-s05-b02.html">Some Steps in the Proof of Theorem 5.21: Lagrange's Theorem</a></li>
+            </ul>
+          </li>
+          <li id="c05-s06">&sect; 5.6: Applications of Lagrange's Theorem<a href="#c05-s06"></a>
+            <ul>
+              <li id="c05-s06-b01"><a href="c05-s06-b01.html">Converse of Wilson's Theorem</a></li>
+              <li id="c05-s06-b02"><a href="c05-s06-b02.html">Illustration of Wolstenholm's Theorem</a></li>
+              <li id="c05-s06-b03"><a href="c05-s06-b03.html">Proof of Wolstenholm's Theorem</a></li>
+            </ul>
+          </li>
+          <li id="c05-s07">&sect; 5.7: Simultaneous Linear Congruences. The Chinese Remainder Theorem<a href="#c05-s07"></a>
+            <ul>
+              <li id="c05-s07-b01"><a href="c05-s07-b01.html">Solving Simultaneous Linear Congruences</a></li>
+              <li id="c05-s07-b02"><a href="c05-s07-b02.html">Chinese Remainder Theorem</a></li>
+            </ul>
+          </li>
+          <li id="c05-s08">&sect; 5.8: Applications of the Chinese Remainder Theorem<a href="#c05-s08"></a>
+            <ul>
+              <li id="c05-s08-b01"><a href="c05-s08-b01.html">Illustration of Theorem 5.28</a></li>
+              <li id="c05-s08-b02"><a href="c05-s08-b02.html">Illustration of Theorem 5.29</a></li>
+            </ul>
+          </li>
+          <li id="c05-s10">&sect; 5.10: The Principle of Cross-Classification<a href="#c05-s10"></a>
+            <ul>
+              <li id="c05-s10-b01"><a href="c05-s10-b01.html">Notation in the Proof of Theorem 5.31</a></li>
+              <li id="c05-s10-b02"><a href="c05-s10-b02.html">Some Steps in the Proof of Theorem 5.31</a></li>
+              <li id="c05-s10-b03"><a href="c05-s10-b03.html">Final Step of Euler's Totient Product Formula Example</a></li>
+              <li id="c05-s10-b04"><a href="c05-s10-b04.html">Illustration of Theorem 5.32</a></li>
+            </ul>
+          </li>
+          <li id="c05-s11">&sect; 5.11: A Decomposition Property of Reduced Residue Systems<a href="#c05-s11"></a>
+            <ul>
+              <li id="c05-s11-b01"><a href="c05-s11-b01.html">Illustration of Theorem 5.33</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c06"><strong>Chapter 6: Finite Abelian Groups and Their Characters</strong><a href="#c06"></a>
+        <ul>
+          <li id="c06-s01">&sect; 6.1: Definitions<a href="#c06-s01"></a>
+            <ul>
+              <li id="c06-s01-b01"><a href="c06-s01-b01.html">Uniqueness of Identity Element</a></li>
+              <li id="c06-s01-b02"><a href="c06-s01-b02.html">Uniqueness of Inverse Element</a></li>
+            </ul>
+          </li>
+          <li id="c06-s03">&sect; 6.3: Elementary Properties of Groups<a href="#c06-s03"></a>
+            <ul>
+              <li id="c06-s03-b01"><a href="c06-s03-b01.html">Inverse of Identity is Itself</a></li>
+              <li id="c06-s03-b02"><a href="c06-s03-b02.html">Illustration of Theorems 6.1 and 6.2 With $ (\mathbb{Z}, +) $</a></li>
+            </ul>
+          </li>
+          <li id="c06-s04">&sect; 6.4: Construction of Subgroups<a href="#c06-s04"></a>
+            <ul>
+              <li id="c06-s04-b01"><a href="c06-s04-b01.html">Order of Element in Group</a></li>
+              <li id="c06-s04-b02"><a href="c06-s04-b02.html">Indicator of Element in Subgroup</a></li>
+              <li id="c06-s04-b03"><a href="c06-s04-b03.html">Illustration of Theorem 6.6</a></li>
+              <li id="c06-s04-b04"><a href="c06-s04-b04.html">Some Steps in the Proof of Theorem 6.6</a></li>
+            </ul>
+          </li>
+          <li id="c06-s05">&sect; 6.5: Characters of Finite Abelian Groups<a href="#c06-s05"></a>
+            <ul>
+              <li id="c06-s05-b01"><a href="c06-s05-b01.html">Multiplicative Property of Characters</a></li>
+              <li id="c06-s05-b02"><a href="c06-s05-b02.html">Examples of Characters</a></li>
+            </ul>
+          </li>
+          <li id="c06-s06">&sect; 6.6: The Character Group<a href="#c06-s06"></a>
+            <ul>
+              <li id="c06-s06-b01"><a href="c06-s06-b01.html">Multiplication of Characters</a></li>
+              <li id="c06-s06-b02"><a href="c06-s06-b02.html">Reciprocal of Characters</a></li>
+              <li id="c06-s06-b03"><a href="c06-s06-b03.html">Reciprocal and Conjugate of Characters</a></li>
+            </ul>
+          </li>
+          <li id="c06-s07">&sect; 6.7: The Orthogonality Relations for Characters<a href="#c06-s07"></a>
+            <ul>
+              <li id="c06-s07-b01"><a href="c06-s07-b01.html">Matrix of Characters</a></li>
+            </ul>
+          </li>
+          <li id="c06-s08">&sect; 6.8: Dirichlet Characters<a href="#c06-s08"></a>
+            <ul>
+              <li id="c06-s08-b01"><a href="c06-s08-b01.html">Dirichlet Characters Example</a></li>
+            </ul>
+          </li>
+          <li id="c06-s10">&sect; 6.10: The Nonvanishing of $ L(1, \chi) $ for Real Nonprincipal $ \chi $<a href="#c06-s10"></a>
+            <ul>
+              <li id="c06-s10-b01"><a href="c06-s10-b01.html">Multiplicative Property of $ A(n) $</a></li>
+              <li id="c06-s10-b02"><a href="c06-s10-b02.html">Final Step of Proof of Theorem 6.20</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c07"><strong>Chapter 7: Dirichlet's Theorem on Primes in Arithmetical Progressions</strong><a href="#c07"></a>
+        <ul>
+          <li id="c07-s02">&sect; 7.2: Dirichlet's Theorem for Primes of the Form $ 4n - 1 $ and $ 4n + 1<a href="#c07-s02"></a>
+            <ul>
+              <li id="c07-s02-b01"><a href="c07-s02-b01.html">Illustration of Proof of Theorem 7.2</a></li>
+              <li id="c07-s02-b02"><a href="c07-s02-b02.html">Some Steps in the Proofs of Theorem 7.2 and Theorem 7.3</a></li>
+            </ul>
+          </li>
+          <li id="c07-s04">&sect; 7.4: Proof of Lemma 7.4<a href="#c07-s04"></a>
+            <ul>
+              <li id="c07-s04-b01"><a href="c07-s04-b01.html">Equation (8) in the Proof of Lemma 7.4</a></li>
+              <li id="c07-s04-b02"><a href="c07-s04-b02.html">Equation (9) in the Proof of Lemma 7.4</a></li>
+            </ul>
+          </li>
+          <li id="c07-s05">&sect; 7.5: Proof of Lemma 7.5<a href="#c07-s05"></a>
+            <ul>
+              <li id="c07-s05-b01"><a href="c07-s05-b01.html">Convergence of Second Sum of (11) in the Proof of Lemma 7.5</a></li>
+              <li id="c07-s05-b02"><a href="c07-s05-b02.html">Equation (13) in the Proof of Lemma 7.5</a></li>
+              <li id="c07-s05-b03"><a href="c07-s05-b03.html">Equation (14) in the Proof of Lemma 7.5</a></li>
+              <li id="c07-s05-b04"><a href="c07-s05-b04.html">Sum in the $ O $-term in Equation (14) in the Proof of Lemma 7.5</a></li>
+            </ul>
+          </li>
+          <li id="c07-s06">&sect; 7.6: Proof of Lemma 7.6<a href="#c07-s06"></a>
+            <ul>
+              <li id="c07-s06-b01"><a href="c07-s06-b01.html">Proof of Lemma 7.6</a></li>
+            </ul>
+          </li>
+          <li id="c07-s08">&sect; 7.8: Proof of Lemma 7.7<a href="#c07-s08"></a>
+            <ul>
+              <li id="c07-s08-b01"><a href="c07-s08-b01.html">Summary of Proof of Dirichlet's Theorem</a></li>
+            </ul>
+          </li>
+          <li id="c07-s09">&sect; 7.9: Distribution of Primes in Arithmetic Progressions<a href="#c07-s09"></a>
+            <ul>
+              <li id="c07-s09-b01"><a href="c07-s09-b01.html">Illustration of Initial Steps in Proof of Theorem 7.10</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c08"><strong>Chapter 8: Periodic Arithmetical Functions and Gauss Sums</strong><a href="#c08"></a>
+        <ul>
+          <li id="c08-s01">&sect; 8.1: Functions Periodic Modulo $ k $<a href="#c08-s01"></a>
+            <ul>
+              <li id="c08-s01-b01"><a href="c08-s01-b01.html">Periodicity of GCD</a></li>
+              <li id="c08-s01-b02"><a href="c08-s01-b02.html">Periodicity of Geometric Sum</a></li>
+            </ul>
+          </li>
+          <li id="c08-s02">&sect; 8.2: Existence of Finite Fourier Series for Periodic Arithmetical Functions<a href="#c08-s02"></a>
+            <ul>
+              <li id="c08-s02-b01"><a href="c08-s02-b01.html">Illustration of Lagrange's Interpolation Theorem</a></li>
+              <li id="c08-s02-b02"><a href="c08-s02-b02.html">Summary of Lagrange's Interpolation Theorem</a></li>
+              <li id="c08-s02-b03"><a href="c08-s02-b03.html">Proof of Theorem 8.4</a></li>
+              <li id="c08-s02-b04"><a href="c08-s02-b04.html">Explanation of Note After Theorem 8.4</a></li>
+            </ul>
+          </li>
+          <li id="c08-s03">&sect; 8.3: Ramanujan's Sum and Generalizations<a href="#c08-s03"></a>
+            <ul>
+              <li id="c08-s03-b01"><a href="c08-s03-b01.html">Proof of Theorem 8.6</a></li>
+            </ul>
+          </li>
+          <li id="c08-s04">&sect; 8.4: Multiplicative Properties of the Sums $ s_k(n) $<a href="#c08-s04"></a>
+            <ul>
+              <li id="c08-s04-b01"><a href="c08-s04-b01.html">Last Few Steps of Theorem 8.8</a></li>
+              <li id="c08-s04-b02"><a href="c08-s04-b02.html">Applying Theorem 8.8 to Ramanujan's Sum</a></li>
+            </ul>
+          </li>
+          <li id="c08-s05">&sect; 8.5: Gauss Sums Associated with Dirichlet Characters<a href="#c08-s05"></a>
+            <ul>
+              <li id="c08-s05-b01"><a href="c08-s05-b01.html">Separability of $ \chi_3 \bmod 5 $</a></li>
+            </ul>
+          </li>
+          <li id="c08-s08">&sect; 8.8: Further Properties of Induced Moduli<a href="#c08-s08"></a>
+            <ul>
+              <li id="c08-s08-b01"><a href="c08-s08-b01.html">Illustration of Theorem 8.17 with $ \chi_1 \bmod 12 $</a></li>
+              <li id="c08-s08-b02"><a href="c08-s08-b02.html">Illustration of Theorem 8.17 with $ \chi_2 \bmod 12 $</a></li>
+              <li id="c08-s08-b03"><a href="c08-s08-b03.html">Illustration of Theorem 8.17 with $ \chi_3 \bmod 12 $</a></li>
+              <li id="c08-s08-b04"><a href="c08-s08-b04.html">Illustration of Theorem 8.17 with $ \chi_4 \bmod 12 $</a></li>
+            </ul>
+          </li>
+          <li id="c08-s10">&sect; 8.10: Primitive Characters and Separable Gauss Sums<a href="#c08-s10"></a>
+            <ul>
+              <li id="c08-s10-b01"><a href="c08-s10-b01.html">Contraposition in Proof of Theorem 8.19</a></li>
+              <li id="c08-s10-b02"><a href="c08-s10-b02.html">Application of Theorem 5.33 (a) in Theorem 8.19</a></li>
+            </ul>
+          </li>
+          <li id="c08-s11">&sect; 8.11: The Finite Fourier Series of the Dirichlet Characters<a href="#c08-s11"></a>
+            <ul>
+              <li id="c08-s11-b01"><a href="c08-s11-b01.html">Summary of Proof of Theorem 8.20</a></li>
+            </ul>
+          </li>
+          <li id="c08-s12">&sect; 8.12: Polya's Inequality for the Partial Sums of Primitive Characters<a href="#c08-s12"></a>
+            <ul>
+              <li id="c08-s12-b01"><a href="c08-s12-b01.html">Equation (25) in Proof of Theorem 8.21</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c09"><strong>Chapter 9: Quadratic Residues and the Quadratic Reciprocity Law</strong><a href="#c09"></a>
+        <ul>
+          <li id="c09-s01">&sect; 9.1: Quadratic Residues<a href="#c09-s01"></a>
+            <ul>
+              <li id="c09-s01-b01"><a href="c09-s01-b01.html">Quadratic Residues Modulo 11</a></li>
+            </ul>
+          </li>
+          <li id="c09-s02">&sect; 9.2: Legendre's Symbol and its Properties<a href="#c09-s02"></a>
+            <ul>
+              <li id="c09-s02-b01"><a href="c09-s02-b01.html">Periodicity of Legendre's Symbol</a></li>
+              <li id="c09-s02-b02"><a href="c09-s02-b02.html">Illustration of Euler's Criterion</a></li>
+            </ul>
+          </li>
+          <li id="c09-s03">&sect; 9.3: Evaluation of $ (-1 \mid p) $ and $ (2 \mid p) $<a href="#c09-s03"></a>
+            <ul>
+              <li id="c09-s03-b01"><a href="c09-s03-b01.html">Proof of Theorem 9.4</a></li>
+            </ul>
+          </li>
+          <li id="c09-s04">&sect; 9.4: Gauss' Lemma<a href="#c09-s04"></a>
+            <ul>
+              <li id="c09-s04-b01"><a href="c09-s04-b01.html">Illustration of Theorem 9.6</a></li>
+              <li id="c09-s04-b02"><a href="c09-s04-b02.html">Illustration of Proof of Theorem 9.6</a></li>
+              <li id="c09-s04-b03"><a href="c09-s04-b03.html">Final Step of Theorem 9.6</a></li>
+              <li id="c09-s04-b04"><a href="c09-s04-b04.html">Illustration of Theorem 9.7</a></li>
+            </ul>
+          </li>
+          <li id="c09-s05">&sect; 9.5: The Quadratic Reciprocity Law<a href="#c09-s05"></a>
+            <ul>
+              <li id="c09-s05-b01"><a href="c09-s05-b01.html">Illustration of Quadratic Reciprocity Law</a></li>
+              <li id="c09-s05-b02"><a href="c09-s05-b02.html">Inequalities in the Proof of Theorem 9.8</a></li>
+            </ul>
+          </li>
+          <li id="c09-s07">&sect; 9.7: The Jacobi Symbol<a href="#c09-s07"></a>
+            <ul>
+              <li id="c09-s07-b01"><a href="c09-s07-b01.html">Illustration of Jacobi Symbol</a></li>
+              <li id="c09-s07-b02"><a href="c09-s07-b02.html">Illustration of Some Steps in the Proof of Theorem 9.10</a></li>
+              <li id="c09-s07-b03"><a href="c09-s07-b03.html">Some Steps in the Proof of Theorem 9.11</a></li>
+            </ul>
+          </li>
+          <li id="c09-s08">&sect; 9.8: Applications to Diophantine Equations<a href="#c09-s08"></a>
+            <ul>
+              <li id="c09-s08-b01"><a href="c09-s08-b01.html">Examples values of $ p $ and $ m $</a></li>
+              <li id="c09-s08-b02"><a href="c09-s08-b02.html">Useful Congruences for Theorem 9.12</a></li>
+            </ul>
+          </li>
+          <li id="c09-s09">&sect; 9.9: Gauss Sums and the Quadratic Reciprocity Law<a href="#c09-s09"></a>
+            <ul>
+              <li id="c09-s09-b01"><a href="c09-s09-b01.html">First Equation of Theorem 9.13</a></li>
+              <li id="c09-s09-b02"><a href="c09-s09-b02.html">Unique $ t \bmod p $ in the Proof of Theorem 9.13</a></li>
+              <li id="c09-s09-b03"><a href="c09-s09-b03.html">Solving the Geometric Sum in the Proof of Theorem 9.13</a></li>
+              <li id="c09-s09-b04"><a href="c09-s09-b04.html">Final Step of Theorem 9.13</a></li>
+              <li id="c09-s09-b05"><a href="c09-s09-b05.html">Obtaining Equation 24 in Proof of Theorem 9.15</a></li>
+              <li id="c09-s09-b06"><a href="c09-s09-b06.html">Definition of $ G(n, \chi) $ Used in Proof of Theorem 9.15</a></li>
+              <li id="c09-s09-b07"><a href="c09-s09-b07.html">Final Steps of Proof of Theorem 9.15</a></li>
+            </ul>
+          </li>
+          <li id="c09-s10">&sect; 9.10: The Reciprocity Law for Quadratic Gauss Sums<a href="#c09-s10"></a>
+            <ul>
+              <li id="c09-s10-b01"><a href="c09-s10-b01.html">An Example of Quadratic Gauss Sum</a></li>
+              <li id="c09-s10-b02"><a href="c09-s10-b02.html">Relationship Between Quadratic Gauss Sums and Gauss Sums</a></li>
+              <li id="c09-s10-b03"><a href="c09-s10-b03.html">Obtaining Equation (29)</a></li>
+              <li id="c09-s10-b04"><a href="c09-s10-b04.html">Cases in Equation (30)</a></li>
+              <li id="c09-s10-b05"><a href="c09-s10-b05.html">Note in Theorem 9.16</a></li>
+              <li id="c09-s10-b06"><a href="c09-s10-b06.html">Obtaining $ g(0) = S(a, m) $</a></li>
+              <li id="c09-s10-b07"><a href="c09-s10-b07.html">Computing $ g(z + 1) - g(z) $</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c10"><strong>Chapter 10: Primitive Roots</strong><a href="#c10"></a>
+        <ul>
+          <li id="c10-s01">&sect; 10.1: The Exponent of a Number $ \bmod m $<a href="#c10-s01"></a>
+            <ul>
+              <li id="c10-s01-b01"><a href="c10-s01-b01.html">Exponents of 2 and 3 modulo 7</a></li>
+            </ul>
+          </li>
+          <li id="c10-s04">&sect; 10.4: The Existence of Primitive Roots $ \bmod p $ for Odd Primes $ p $<a href="#c10-s04"></a>
+            <ul>
+              <li id="c10-s04-b01"><a href="c10-s04-b01.html">Illustration of Lemma 1</a></li>
+              <li id="c10-s04-b02"><a href="c10-s04-b02.html">Illustration of Theorem 10.4</a></li>
+              <li id="c10-s04-b03"><a href="c10-s04-b03.html">Another Illustration of Theorem 10.4</a></li>
+            </ul>
+          </li>
+          <li id="c10-s05">&sect; 10.5: Primitive Roots and Quadratic Residues<a href="#c10-s05"></a>
+            <ul>
+              <li id="c10-s05-b01"><a href="c10-s05-b01.html">Illustration of Theorem 10.5</a></li>
+            </ul>
+          </li>
+          <li id="c10-s06">&sect; 10.6: The Existence of Primitive Roots $ \bmod p^{alpha} $<a href="#c10-s06"></a>
+            <ul>
+              <li id="c10-s06-b01"><a href="c10-s06-b01.html">Illustration of Theorem 10.6</a></li>
+              <li id="c10-s06-b02"><a href="c10-s06-b02.html">Binomial Expansion of $ (g + p)^{p-1} $ in Proof of Theorem 10.6</a></li>
+              <li id="c10-s06-b03"><a href="c10-s06-b03.html">Raising Both Sides to the $ p $th Power in Proof of Lemma 2</a></li>
+            </ul>
+          </li>
+          <li id="c10-s10">&sect; 10.10: The Index Calculus<a href="#c10-s10"></a>
+            <ul>
+              <li id="c10-s10-b01"><a href="c10-s10-b01.html">Illustration of Index Calculus</a></li>
+              <li id="c10-s10-b02"><a href="c10-s10-b02.html">Observations on Binomal Congruence Example</a></li>
+            </ul>
+          </li>
+          <li id="c10-s11">&sect; 10.11: Primitive Roots and Dirichlet Characters<a href="#c10-s11"></a>
+            <ul>
+              <li id="c10-s11-b01"><a href="c10-s11-b01.html">Periodicity of $ \chi_h $</a></li>
+              <li id="c10-s11-b02"><a href="c10-s11-b02.html">Illustration of Equation (21) With Modulus 3</a></li>
+              <li id="c10-s11-b03"><a href="c10-s11-b03.html">Illustration of Equation (21) With Modulus 5</a></li>
+              <li id="c10-s11-b04"><a href="c10-s11-b04.html">Illustration of Equation (21) With Modulus 2</a></li>
+              <li id="c10-s11-b05"><a href="c10-s11-b05.html">Illustration of Equation (21) With Modulus 4</a></li>
+              <li id="c10-s11-b06"><a href="c10-s11-b06.html">Illustration of Theorem 10.11 With Modulus 8</a></li>
+              <li id="c10-s11-b07"><a href="c10-s11-b07.html">Illustration of Theorem 10.11 With Modulus 16</a></li>
+              <li id="c10-s11-b08"><a href="c10-s11-b08.html">Binomial Expansion in Proof of Theorem 10.11</a></li>
+              <li id="c10-s11-b09"><a href="c10-s11-b09.html">Dirichlet Characters Modulo 15</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c11"><strong>Chapter 11: Dirichlet Series and Euler Products</strong><a href="#c11"></a>
+        <ul>
+          <li id="c11-s01">&sect; 11.1: Introduction<a href="#c11-s01"></a>
+            <ul>
+              <li id="c11-s01-b01"><a href="c11-s01-b01.html">Absolute Value of $ n^s $</a></li>
+            </ul>
+          </li>
+          <li id="c11-s02">&sect; 11.2: The Half-Plane of Absolute Convergence of a Dirichlet Series<a href="#c11-s02"></a>
+            <ul>
+              <li id="c11-s02-b01"><a href="c11-s02-b01.html">Riemann Zeta Function</a></li>
+            </ul>
+          </li>
+          <li id="c11-s03">&sect; 11.3: The Function Defined by a Dirichlet Series<a href="#c11-s03"></a>
+            <ul>
+              <li id="c11-s03-b01"><a href="c11-s03-b01.html">Steps in Proof of Lemma 1</a></li>
+              <li id="c11-s03-b02"><a href="c11-s03-b02.html">Illustration of Theorem 11.2</a></li>
+              <li id="c11-s03-b03"><a href="c11-s03-b03.html">Inequality in Proof of Theorem 11.2</a></li>
+              <li id="c11-s03-b04"><a href="c11-s03-b04.html">Steps in Proof of Theorem 11.3</a></li>
+            </ul>
+          </li>
+          <li id="c11-s04">&sect; 11.4: Multiplication of Dirichlet Series<a href="#c11-s04"></a>
+            <ul>
+              <li id="c11-s04-b01"><a href="c11-s04-b01.html">Summations in Proof of Theorem 11.5</a></li>
+              <li id="c11-s04-b02"><a href="c11-s04-b02.html">Some Steps in Example 1</a></li>
+              <li id="c11-s04-b03"><a href="c11-s04-b03.html">Some Steps in Example 2</a></li>
+              <li id="c11-s04-b04"><a href="c11-s04-b04.html">Some Steps in Example 3</a></li>
+              <li id="c11-s04-b05"><a href="c11-s04-b05.html">Some Steps in Example 4</a></li>
+              <li id="c11-s04-b06"><a href="c11-s04-b06.html">Some Steps in Example 5</a></li>
+            </ul>
+          </li>
+          <li id="c11-s05">&sect; 11.5: Euler Products<a href="#c11-s05"></a>
+            <ul>
+              <li id="c11-s05-b01"><a href="c11-s05-b01.html">LHS and RHS</a></li>
+              <li id="c11-s05-b02"><a href="c11-s05-b02.html">Illustration of Proof of Theorem 11.6</a></li>
+              <li id="c11-s05-b03"><a href="c11-s05-b03.html">Some Convergence Tests</a></li>
+              <li id="c11-s05-b04"><a href="c11-s05-b04.html">Examples</a></li>
+              <li id="c11-s05-b05"><a href="c11-s05-b05.html">Euler Product for Principal Character</a></li>
+            </ul>
+          </li>
+          <li id="c11-s06">&sect; 11.6: The Half-Plane of Convergence of a Dirichlet Series<a href="#c11-s06"></a>
+            <ul>
+              <li id="c11-s06-b01"><a href="c11-s06-b01.html">Applying Abel's Identity in Lemma 2</a></li>
+              <li id="c11-s06-b02"><a href="c11-s06-b02.html">Definite Integral in Lemma 2</a></li>
+              <li id="c11-s06-b03"><a href="c11-s06-b03.html">Inequality in Lemma 2</a></li>
+            </ul>
+          </li>
+          <li id="c11-s07">&sect; 11.7: Analytic Properties of Dirichlet Series<a href="#c11-s07"></a>
+            <ul>
+              <li id="c11-s07-b01"><a href="c11-s07-b01.html">Description of Open Set</a></li>
+              <li id="c11-s07-b02"><a href="c11-s07-b02.html">Description of Complex Analytic Function</a></li>
+              <li id="c11-s07-b03"><a href="c11-s07-b03.html">Description of Uniform Convergence</a></li>
+              <li id="c11-s07-b04"><a href="c11-s07-b04.html">Description of Compact Set</a></li>
+              <li id="c11-s07-b05"><a href="c11-s07-b05.html">Cauchy's Integral Formula</a></li>
+              <li id="c11-s07-b06"><a href="c11-s07-b06.html">Cauchy Criterion</a></li>
+            </ul>
+          </li>
+          <li id="c11-s08">&sect; 11.8: Dirichlet Series with Nonnegative Coefficients<a href="#c11-s08"></a>
+            <ul>
+              <li id="c11-s08-b01"><a href="c11-s08-b01.html">Obtaining Equation 16 in Proof of Theorem 11.13</a></li>
+              <li id="c11-s08-b02"><a href="c11-s08-b02.html">Obtaining Final Equation in Proof of Theorem 11.13</a></li>
+            </ul>
+          </li>
+          <li id="c11-s09">&sect; 11.9: Dirichlet Series Expressed as Exponentials of Dirichlet Series<a href="#c11-s09"></a>
+            <ul>
+              <li id="c11-s09-b01"><a href="c11-s09-b01.html">Obtaining Dirichlet Product in Proof of Theorem 11.14</a></li>
+            </ul>
+          </li>
+          <li id="c11-s10">&sect; 11.10: Mean Value Formulas for Dirichlet Series<a href="#c11-s10"></a>
+            <ul>
+              <li id="c11-s10-b01"><a href="c11-s10-b01.html">Some Steps in Proof of Theorem 11.10</a></li>
+              <li id="c11-s10-b02"><a href="c11-s10-b02.html">Complex Conjugates for Theorem 11.16</a></li>
+              <li id="c11-s10-b03"><a href="c11-s10-b03.html">Applying Theorem 11.15 in Theorem 11.16</a></li>
+              <li id="c11-s10-b04"><a href="c11-s10-b04.html">Obtaining Theorem 11.16 (b)</a></li>
+              <li id="c11-s10-b05"><a href="c11-s10-b05.html">Obtaining Theorem 11.16 (c)</a></li>
+              <li id="c11-s10-b06"><a href="c11-s10-b06.html">Obtaining Theorem 11.16 (d)</a></li>
+            </ul>
+          </li>
+          <li id="c11-s12">&sect; 11.12: An Integral Formula for the Partial Sums of a Dirichlet Series<a href="#c11-s12"></a>
+            <ul>
+              <li id="c11-s12-b01"><a href="c11-s12-b01.html">Contour Integral for Figure 11.4</a></li>
+              <li id="c11-s12-b02"><a href="c11-s12-b02.html">Inequalities for Integrals</a></li>
+              <li id="c11-s12-b03"><a href="c11-s12-b03.html">Solving Improper Integral for Proof of (20)</a></li>
+              <li id="c11-s12-b04"><a href="c11-s12-b04.html">Contour Integral Around Pole for Figure 11.5</a></li>
+              <li id="c11-s12-b05"><a href="c11-s12-b05.html">Final Integral in Proof of Lemma 4</a></li>
+              <li id="c11-s12-b06"><a href="c11-s12-b06.html">Some Steps in Proof of Perron's Formula</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c12"><strong>Chapter 12: The Functions $ \zeta(s) $ and $ L(s, \chi) $</strong><a href="#c12"></a>
+        <ul>
+          <li id="c12-s01">&sect; 12.1: Introduction<a href="#c12-s01"></a>
+            <ul>
+              <li id="c12-s01-b01"><a href="c12-s01-b01.html">Hurwitz Zeta Function</a></li>
+              <li id="c12-s01-b02"><a href="c12-s01-b02.html">$ L(s, \chi) $ As Linear Combination of Hurwitz Zeta Function</a></li>
+            </ul>
+          </li>
+          <li id="c12-s02">&sect; 12.2: Properties of the Gamma Function<a href="#c12-s02"></a>
+            <ul>
+              <li id="c12-s02-b01"><a href="c12-s02-b01.html">Illustration of $ \Gamma(n) $</a></li>
+              <li id="c12-s02-b02"><a href="c12-s02-b02.html">Properties of $ \Gamma(s) $</a></li>
+            </ul>
+          </li>
+          <li id="c12-s03">&sect; 12.3: Integral Representation for the Hurwitz Zeta Function<a href="#c12-s03"></a>
+            <ul>
+              <li id="c12-s03-b01"><a href="c12-s03-b01.html">Inequality in Proof of Theorem 12.1</a></li>
+              <li id="c12-s03-b02"><a href="c12-s03-b02.html">Change of Variable in Proof of Theorem 12.2</a></li>
+              <li id="c12-s03-b03"><a href="c12-s03-b03.html">Steps Involved in Showing Convergence of Integral</a></li>
+            </ul>
+          </li>
+          <li id="c12-s04">&sect; 12.4: A Contour Integral Representation for the Hurwitz Zeta Function<a href="#c12-s04"></a>
+            <ul>
+              <li id="c12-s04-b01"><a href="c12-s04-b01.html">First Two Inequalities</a></li>
+              <li id="c12-s04-b02"><a href="c12-s04-b02.html">Showing That Integrand is Bounded</a></li>
+              <li id="c12-s04-b03"><a href="c12-s04-b03.html">Integral Along $ C_1 $</a></li>
+              <li id="c12-s04-b04"><a href="c12-s04-b04.html">Integral Along $ C_2 $</a></li>
+              <li id="c12-s04-b05"><a href="c12-s04-b05.html">Integral Along $ C_3 $</a></li>
+              <li id="c12-s04-b06"><a href="c12-s04-b06.html">Adding the Integrals</a></li>
+              <li id="c12-s04-b07"><a href="c12-s04-b07.html">Dividing by $ 2i $</a></li>
+              <li id="c12-s04-b08"><a href="c12-s04-b08.html">Absolute Value of $ I_2(s, c) $</a></li>
+              <li id="c12-s04-b09"><a href="c12-s04-b09.html">Final Step</a></li>
+            </ul>
+          </li>
+          <li id="c12-s05">&sect; 12.5: The Analytic Continuation of the Hurwitz Zeta Function<a href="#c12-s05"></a>
+            <ul>
+              <li id="c12-s05-b01"><a href="c12-s05-b01.html">Finding Residues</a></li>
+              <li id="c12-s05-b02"><a href="c12-s05-b02.html">Computing $ \zeta(0) $</a></li>
+              <li id="c12-s05-b03"><a href="c12-s05-b03.html">Computing $ \zeta(-1) $</a></li>
+            </ul>
+          </li>
+          <li id="c12-s06">&sect; 12.6: Analytic Continuation of $ \zeta(s) $ and $ L(s, \chi) $<a href="#c12-s06"></a>
+            <ul>
+              <li id="c12-s06-b01"><a href="c12-s06-b01.html">Final Step</a></li>
+            </ul>
+          </li>
+          <li id="c12-s07">&sect; 12.7: Hurwitz's Formula for $ \zeta(s, a) $<a href="#c12-s07"></a>
+            <ul>
+              <li id="c12-s07-b01"><a href="c12-s07-b01.html">Equality of $ F(1, s) $ and $ \zeta(s) $</a></li>
+              <li id="c12-s07-b02"><a href="c12-s07-b02.html">Showing That Integrand Is Bounded</a></li>
+            </ul>
+          </li>
+          <li id="c12-s08">&sect; 12.8: The Functional Equation for the Riemann Zeta Function<a href="#c12-s08"></a>
+            <ul>
+              <li id="c12-s08-b01"><a href="c12-s08-b01.html">Legendre's Duplication Formula</a></li>
+              <li id="c12-s08-b02"><a href="c12-s08-b02.html">Applying Legendre's Duplication Formula</a></li>
+              <li id="c12-s08-b03"><a href="c12-s08-b03.html">Replacing the Product in (13)</a></li>
+            </ul>
+          </li>
+          <li id="c12-s09">&sect; 12.9: A Functional Equation for the Hurwitz Zeta Function<a href="#c12-s09"></a>
+            <ul>
+              <li id="c12-s09-b01"><a href="c12-s09-b01.html">Final Step in Proof of Theorem 12.8</a></li>
+              <li id="c12-s09-b02"><a href="c12-s09-b02.html">Obtaining Riemann's Functional Equation</a></li>
+            </ul>
+          </li>
+          <li id="c12-s10">&sect; 12.10: The Functional Equation for L-Functions<a href="#c12-s10"></a>
+            <ul>
+              <li id="c12-s10-b01"><a href="c12-s10-b01.html">First Equation in Proof of Theorem 12.10</a></li>
+              <li id="c12-s10-b02"><a href="c12-s10-b02.html">First Equation in Proof of Theorem 12.11</a></li>
+              <li id="c12-s10-b03"><a href="c12-s10-b03.html">Final Steps in Proof of Theorem 12.11</a></li>
+            </ul>
+          </li>
+          <li id="c12-s11">&sect; 12.11: Evaluation of $ \zeta(-n, a) $$<a href="#c12-s11"></a>
+            <ul>
+              <li id="c12-s11-b01"><a href="c12-s11-b01.html">First Formula</a></li>
+              <li id="c12-s11-b02"><a href="c12-s11-b02.html">Proof of Theorem 12.12</a></li>
+            </ul>
+          </li>
+          <li id="c12-s12">&sect; 12.12: Properties of Bernoulli Numbers and Bernoulli Polynomials<a href="#c12-s12"></a>
+            <ul>
+              <li id="c12-s12-b01"><a href="c12-s12-b01.html">Initial Identity in Proof of Theorem 12.14</a></li>
+              <li id="c12-s12-b02"><a href="c12-s12-b02.html">Obtaining Equation (18) in Proof of Theorem 12.14</a></li>
+              <li id="c12-s12-b03"><a href="c12-s12-b03.html">Obtaining Equation (19) in Proof of Theorem 12.14</a></li>
+              <li id="c12-s12-b04"><a href="c12-s12-b04.html">Proof of Theorem 12.15</a></li>
+              <li id="c12-s12-b05"><a href="c12-s12-b05.html">Computing $ B_0 $</a></li>
+              <li id="c12-s12-b06"><a href="c12-s12-b06.html">Computing Bernoulli Numbers</a></li>
+              <li id="c12-s12-b07"><a href="c12-s12-b07.html">Computing Polynomials $ B_n(x) $</a></li>
+              <li id="c12-s12-b08"><a href="c12-s12-b08.html">Symbolic Representations of Theorems 12.12 and 12.15</a></li>
+              <li id="c12-s12-b09"><a href="c12-s12-b09.html">Computing $ \zeta(0) $ and $ \zeta(-1) $ Again</a></li>
+              <li id="c12-s12-b10"><a href="c12-s12-b10.html">Proof of Theorem 12.16</a></li>
+              <li id="c12-s12-b11"><a href="c12-s12-b11.html">Showing Even Function in Note for Theorem 12.16</a></li>
+              <li id="c12-s12-b12"><a href="c12-s12-b12.html">Showing $ B_{2n + 1} = 0 $ in Note for Theorem 12.16</a></li>
+              <li id="c12-s12-b13"><a href="c12-s12-b13.html">Asymptotic Relation in Theorem 12.18</a></li>
+              <li id="c12-s12-b14"><a href="c12-s12-b14.html">Asymptotic Relation in Note for Theorem 12.18</a></li>
+              <li id="c12-s12-b15"><a href="c12-s12-b15.html">Applying Stirling's Formula to Theorem 12.18</a></li>
+              <li id="c12-s12-b16"><a href="c12-s12-b16.html">Obtaining $ B_n(x) $ in Theorem 12.19</a></li>
+              <li id="c12-s12-b17"><a href="c12-s12-b17.html">Obtaining $ B_{2n}(x) $ in Theorem 12.19</a></li>
+              <li id="c12-s12-b18"><a href="c12-s12-b18.html">Obtaining $ B_{2n + 1}(x) $ in Theorem 12.19</a></li>
+            </ul>
+          </li>
+          <li id="c12-s14">&sect; 12.14: Approximation of $ \zeta(s, a) $ by Finite Sums<a href="#c12-s14"></a>
+            <ul>
+              <li id="c12-s14-b01"><a href="c12-s14-b01.html">Obtaining First Equation in Proof of Theorem 12.21</a></li>
+              <li id="c12-s14-b02"><a href="c12-s14-b02.html">Solving Integral in Proof of Theorem 12.21</a></li>
+              <li id="c12-s14-b03"><a href="c12-s14-b03.html">Integration by Parts in Proof of Theorem 12.22</a></li>
+              <li id="c12-s14-b04"><a href="c12-s14-b04.html">Final Step in Proof of Theorem 12.22</a></li>
+            </ul>
+          </li>
+          <li id="c12-s15">&sect; 12.15: Inequalities for $ \lvert \zeta(s, a) \rvert $<a href="#c12-s15"></a>
+            <ul>
+              <li id="c12-s15-b01"><a href="c12-s15-b01.html">Applying Equation (25) in Proof of Theorem 12.23</a></li>
+              <li id="c12-s15-b02"><a href="c12-s15-b02.html">First Inequality After Applying Equation (25)</a></li>
+              <li id="c12-s15-b03"><a href="c12-s15-b03.html">Second Inequality After Applying Equation (25)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c13"><strong>Chapter 13: Analytic Proof of Prime Number Theorem</strong><a href="#c13"></a>
+        <ul>
+          <li id="c13-s02">&sect; 13.2: Lemmas<a href="#c13-s02"></a>
+            <ul>
+              <li id="c13-s02-b01"><a href="c13-s02-b01.html">Applying Abel's Identity in Proof of Lemma 1</a></li>
+              <li id="c13-s02-b02"><a href="c13-s02-b02.html">Final Steps in Proof of Lemma 1</a></li>
+              <li id="c13-s02-b03"><a href="c13-s02-b03.html">Inequality for Limit Inferior in Proof of Theorem Lemma 2</a></li>
+              <li id="c13-s02-b04"><a href="c13-s02-b04.html">Summarizing Proof of Theorem 13.1</a></li>
+              <li id="c13-s02-b05"><a href="c13-s02-b05.html">Gamma Function in Lemma 3</a></li>
+            </ul>
+          </li>
+          <li id="c13-s03">&sect; 13.3: A Contour Integral Representation for $ \psi_1(x) / x^2 $<a href="#c13-s03"></a>
+            <ul>
+              <li id="c13-s03-b01"><a href="c13-s03-b01.html">Applying Lemma 3 in Theorem 13.2</a></li>
+              <li id="c13-s03-b02"><a href="c13-s03-b02.html">Applying Lemma 3 in Theorem 13.3</a></li>
+              <li id="c13-s03-b03"><a href="c13-s03-b03.html">Final Step in Proof of Theorem 13.3</a></li>
+            </ul>
+          </li>
+          <li id="c13-s04">&sect; 13.4: Upper Bounds for $ \zeta(s) $ and $ \zeta'(s) $ Near the Line $ \sigma = 1 $<a href="#c13-s04"></a>
+            <ul>
+              <li id="c13-s04-b01"><a href="c13-s04-b01.html">Applying Theorem 12.21</a></li>
+              <li id="c13-s04-b02"><a href="c13-s04-b02.html">Derivatives for Equation (18)</a></li>
+              <li id="c13-s04-b03"><a href="c13-s04-b03.html">Integral in Proof of Theorem 13.4</a></li>
+            </ul>
+          </li>
+          <li id="c13-s05">&sect; 13.5: The Nonvanishing of $ \zeta(s) $ on the Line $ \sigma = 1 $<a href="#c13-s05"></a>
+            <ul>
+              <li id="c13-s05-b01"><a href="c13-s05-b01.html">Formula for $ G(s) $ in Proof of Theorem 13.5</a></li>
+            </ul>
+          </li>
+          <li id="c13-s06">&sect; 13.6: Inequalities for $ \lvert 1/\zeta(s) \rvert $ and $ \lvert \zeta'(s) / \zeta(s) \rvert $<a href="#c13-s06"></a>
+            <ul>
+              <li id="c13-s06-b01"><a href="c13-s06-b01.html">Reverse Triangle Inequality in Proof of Theorem 13.7</a></li>
+              <li id="c13-s06-b02"><a href="c13-s06-b02.html">Finding $ \alpha $ in Proof of Theorem 13.7</a></li>
+              <li id="c13-s06-b03"><a href="c13-s06-b03.html">Final Inequality in Proof of Theorem 13.7</a></li>
+            </ul>
+          </li>
+          <li id="c13-s08">&sect; 13.8: Zero-Free Regions for $ \zeta(s) $<a href="#c13-s08"></a>
+            <ul>
+              <li id="c13-s08-b01"><a href="c13-s08-b01.html">Applying Theorem 13.7 in Proof of Theorem 13.10</a></li>
+              <li id="c13-s08-b02"><a href="c13-s08-b02.html">Applying Theorem 13.4 in Proof of Theorem 13.10</a></li>
+            </ul>
+          </li>
+          <li id="c13-s10">&sect; 13.10: Application to the Divisor Function<a href="#c13-s10"></a>
+            <ul>
+              <li id="c13-s10-b01"><a href="c13-s10-b01.html">Average Order $ d(n) $</a></li>
+              <li id="c13-s10-b02"><a href="c13-s10-b02.html">Some Steps in Introduction to Section 13.10</a></li>
+              <li id="c13-s10-b03"><a href="c13-s10-b03.html">Equivalent Relation in Note of Theorem 13.12</a></li>
+              <li id="c13-s10-b04"><a href="c13-s10-b04.html">Illustration of $ S(n) $ in Proof of Theorem 13.12</a></li>
+            </ul>
+          </li>
+          <li id="c13-s11">&sect; 13.11: Application to Euler's Totient<a href="#c13-s11"></a>
+            <ul>
+              <li id="c13-s11-b01"><a href="c13-s11-b01.html">Expansion of $ -P(x) $ in Proof of Theorem 13.13</a></li>
+              <li id="c13-s11-b02"><a href="c13-s11-b02.html">Partial Sum of $ a_p $</a></li>
+              <li id="c13-s11-b03"><a href="c13-s11-b03.html">Final Step in Proof of Theorem 13.13</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li id="c14"><strong>Chapter 14: Partitions</strong><a href="#c14"></a>
+        <ul>
+          <li id="c14-s01">&sect; 14.1: Introduction<a href="#c14-s01"></a>
+            <ul>
+              <li id="c14-s01-b01"><a href="c14-s01-b01.html">Goldbach Conjecture</a></li>
+            </ul>
+          </li>
+          <li id="c14-s03">&sect; 14.3: Generating Functions for Partitions<a href="#c14-s03"></a>
+            <ul>
+              <li id="c14-s03-b01"><a href="c14-s03-b01.html">Generating Function for Unrestricted Partitions</a></li>
+              <li id="c14-s03-b02"><a href="c14-s03-b02.html">Generating Function for Partitions With Unequal Parts</a></li>
+            </ul>
+          </li>
+          <li id="c14-s04">&sect; 14.4: Euler's Pentagonal-Number Theorem<a href="#c14-s04"></a>
+            <ul>
+              <li id="c14-s04-b01"><a href="c14-s04-b01.html">Generating Function for Euler's Pentagonal Theorem</a></li>
+              <li id="c14-s04-b02"><a href="c14-s04-b02.html">Examples of Pentagonal Numbers</a></li>
+              <li id="c14-s04-b03"><a href="c14-s04-b03.html">Obtaining $ F_1 $ and $ S_1 $</a></li>
+              <li id="c14-s04-b04"><a href="c14-s04-b04.html">Elaborating Steps for $ F_n - F_{n-1} $</a></li>
+              <li id="c14-s04-b05"><a href="c14-s04-b05.html">Last Few Steps in Proof of Theorem 14.3</a></li>
+            </ul>
+          </li>
+          <li id="c14-s05">&sect; 14.5: Combinatorial Proof of Euler's Pentagonal-Number Theorem<a href="#c14-s05"></a>
+            <ul>
+              <li id="c14-s05-b01"><a href="c14-s05-b01.html">Illustration of Case 1 $ (b < s) $</a></li>
+              <li id="c14-s05-b02"><a href="c14-s05-b02.html">Illustration of Case 2.1 $ (b = s) $ (no intersection)</a></li>
+              <li id="c14-s05-b03"><a href="c14-s05-b03.html">Illustration of Case 2.2 $ (b = s) $ (intersection)</a></li>
+              <li id="c14-s05-b04"><a href="c14-s05-b04.html">Illustration of Case 3.1 $ (b > s) $ (no intersection)</a></li>
+              <li id="c14-s05-b05"><a href="c14-s05-b05.html">Illustration of Case 3.2 $ (b = s + 1) $ (intersection)</a></li>
+              <li id="c14-s05-b06"><a href="c14-s05-b06.html">Illustration of Case 3.3 $ (b > s + 1) $ (intersection)</a></li>
+              <li id="c14-s05-b07"><a href="c14-s05-b07.html">Summary of All Cases</a></li>
+            </ul>
+          </li>
+          <li id="c14-s06">&sect; 14.6: Euler's Recursion Formula for $ p(n) $<a href="#c14-s06"></a>
+            <ul>
+              <li id="c14-s06-b01"><a href="c14-s06-b01.html">Illustration of Theorem 14.4</a></li>
+              <li id="c14-s06-b02"><a href="c14-s06-b02.html">Proof of Theorem 14.4</a></li>
+            </ul>
+          </li>
+          <li id="c14-s07">&sect; 14.7: An Upper Bound for $ p(n) $<a href="#c14-s07"></a>
+            <ul>
+              <li id="c14-s07-b01"><a href="c14-s07-b01.html">Expansion of $ -\log(1 - x^n) $ in Proof of Theorem 14.5</a></li>
+              <li id="c14-s07-b02"><a href="c14-s07-b02.html">Finding the Minimum in Proof of Theorem 14.5</a></li>
+              <li id="c14-s07-b03"><a href="c14-s07-b03.html">Final Step in Proof of Theorem 14.5</a></li>
+              <li id="c14-s07-b04"><a href="c14-s07-b04.html">Inequality in the Note After Theorem 14.5</a></li>
+              <li id="c14-s07-b05"><a href="c14-s07-b05.html">Finding minimum for $ f(t) $ in the Note After Theorem 14.5</a></li>
+              <li id="c14-s07-b06"><a href="c14-s07-b06.html">Final Step in the Note After Theorem 14.5</a></li>
+            </ul>
+          </li>
+          <li id="c14-s08">&sect; 14.8: Jacobi's Triple Product Identity<a href="#c14-s08"></a>
+            <ul>
+              <li id="c14-s08-b01"><a href="c14-s08-b01.html">Expansion of Equation (13)</a></li>
+              <li id="c14-s08-b02"><a href="c14-s08-b02.html">Obtaining the Functional Equation for $ F(z) $</a></li>
+              <li id="c14-s08-b03"><a href="c14-s08-b03.html">Obtaining the Recursion Formula for Coefficients</a></li>
+              <li id="c14-s08-b04"><a href="c14-s08-b04.html">Applying the Recursion Formula for Coefficients for Positive $ m $</a></li>
+              <li id="c14-s08-b05"><a href="c14-s08-b05.html">Applying the Recursion Formula for Coefficients for Negative $ m $</a></li>
+              <li id="c14-s08-b06"><a href="c14-s08-b06.html">Obtaining Equation (20)</a></li>
+              <li id="c14-s08-b07"><a href="c14-s08-b07.html">Obtaining Product Formula for $ G_x(e^{\pi i / 4}) $</a></li>
+              <li id="c14-s08-b08"><a href="c14-s08-b08.html">Final Equation for $ a_0(x) $</a></li>
+            </ul>
+          </li>
+          <li id="c14-s09">&sect; 14.9: Consequences of Jacobi's Identity<a href="#c14-s09"></a>
+            <ul>
+              <li id="c14-s09-b01"><a href="c14-s09-b01.html">Obtaining Euler's Pentagonal Number Theorem from Jacobi's Identity</a></li>
+              <li id="c14-s09-b02"><a href="c14-s09-b02.html">Explaining Equation (21) of Theorem 14.7</a></li>
+              <li id="c14-s09-b03"><a href="c14-s09-b03.html">Replacing $ z^2 $ by $ -xz $ in Jacobi's Identity</a></li>
+              <li id="c14-s09-b04"><a href="c14-s09-b04.html">Two Relations in Proof of Theorem 14.7</a></li>
+              <li id="c14-s09-b05"><a href="c14-s09-b05.html">Rearrangement of Terms in Proof of Theorem 14.7</a></li>
+            </ul>
+          </li>
+          <li id="c14-s10">&sect; 14.10: Logarithmic Differentiation of Generating Functions<a href="#c14-s10"></a>
+            <ul>
+              <li id="c14-s10-b01"><a href="c14-s10-b01.html">Obtaining $ G'_A(x^m) $</a></li>
+              <li id="c14-s10-b02"><a href="c14-s10-b02.html">Obtaining Equation (24) of Theorem 14.8</a></li>
+              <li id="c14-s10-b03"><a href="c14-s10-b03.html">Relationship Between Divisor Sum Function and Unrestricted Partition Function</a></li>
+              <li id="c14-s10-b04"><a href="c14-s10-b04.html">Illustration of Example 1</a></li>
+              <li id="c14-s10-b05"><a href="c14-s10-b05.html">Elaborating Example 2</a></li>
+              <li id="c14-s10-b06"><a href="c14-s10-b06.html">Elaborating Equation (25)</a></li>
+              <li id="c14-s10-b07"><a href="c14-s10-b07.html">Result from Equation (25)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- end chapters -->
+    <footer>
+      <hr>
+      <p>
+        The source code of this website is
+        <a href="https://github.com/offbeatcc/iant/">available on GitHub</a>.
+      </p>
+      <p>
+        To receive updates on upcoming book club meetings, please
+        <a href="https://twitter.com/intent/follow?screen_name=susam">follow
+        Susam on Twitter</a>.
+      </p>
+    </footer>
+  </body>
+</html>

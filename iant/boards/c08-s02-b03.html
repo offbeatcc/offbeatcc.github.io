@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Proof of Theorem 8.4</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Proof of Theorem 8.4
+
+From Theorem 8.3, we have
+
+$$
+w_m = \sum_{n=0}^{k-1} a_n e^{2 \pi imn/k}
+\text{ where }
+a_n = \frac{1}{k} \sum_{m=0}^{k-1} w_m e^{-2 \pi imn/k}
+$$
+
+Substitute $ w_m = f(m) $ and $ a_n = g(n) $.
+
+$$
+f(m) = \sum_{n=0}^{k-1} g(n) e^{2 \pi imn/k}
+\text{ where }
+g(n) = \frac{1}{k} \sum_{m=0}^{k-1} f(m) e^{-2 \pi imn/k}
+$$
+
+</div>
+</textarea>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Last Few Steps in Proof of Theorem 14.3</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Last Few Steps in Proof of Theorem 14.3
+
+We know that
+$$
+P_r = (1 - x^r) P_{r-1}.
+$$
+Rewrite this as
+$$
+P_r = -(x^r - 1) P_{r-1}.
+$$
+Thus
+$$
+\frac{-1}{P_{r-1}} = \frac{x^r - 1}{P_r}.
+$$
+
+---
+
+$$
+r(n - 1) + g(r)
+= rn - r + \frac{r(r+1)}{2}
+= rn + \frac{r(r + 1) - 2r}{2}
+= rn + \frac{r(r - 1)}{2}
+= rn + g(r - 1).
+$$
+
+---
+
+$$
+rn + g(r)
+= rn + \frac{r(r + 1)}{2}
+= r\left( n + \frac{r + 1}{2} \right)
+\ge r(n + 1)
+\ge n + 1.
+$$
+
+Since $ 0 \le x < 1 $, using the above inequality, we get
+$$
+x^{rn + g(r)} \le x^{n + 1}.
+$$
+
+</div>
+</textarea>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Steps Involved in Showing Convergence of Integral</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Steps Involved in Showing Convergence of Integral
+
+\begin{align*}
+  \int_0^1 \frac{e^{-at} t^{\sigma - 1}}{1 - e^{-t}} \, dt
+  &\le \int_0^1 \frac{e^t e^{-at} t^{\delta}}{e^t(1 - e^{-t})} \, dt \\
+  &= \int_0^1 \frac{e^{t(1 - a)} t^{\delta}}{e^t - 1} \, dt \\
+  &\le \int_0^1 \frac{e^{t(1 - a)} t^{\delta}}{t} \, dt. \\
+  &= \int_0^1 e^{t(1 - a)} t^{\delta - 1} \, dt. \\
+  &\le \int_0^1 e^{1(1 - a)} t^{\delta - 1} \, dt \\
+  &= e^{1 - a} \int_0^1 t^{\delta - 1} \, dt \\
+  &= e^{1 - a} \frac{t^{\delta}}{\delta} \Biggr\rvert_0^1 \\
+  &= \frac{e^{1-a}}{\delta}.
+\end{align*}
+
+</div>
+</textarea>

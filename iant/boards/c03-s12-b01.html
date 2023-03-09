@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Notation for Theorem 3.17</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Notation for Theorem 3.17
+
+$$
+F(x) = \sum_{n \le x} f(n),
+\qquad
+G(x) = \sum_{n \le x} g(n),
+\qquad
+h = f * g,
+\qquad
+H(x)
+= \sum_{n \le x} h(n)
+= \sum_{n \le x} (f * g)(n)
+= \sum_{n \le x} \sum_{d \mid n} f(d) g \left(\frac{n}{d} \right).
+$$
+
+
+## Rearrangement of Summations in $ H(x) $
+
+$$
+H(x) = \sum_{n \le x} \sum_{d \mid n} f(d) g \left(\frac{n}{d} \right)
+= \sum_{n \le x} f(n) \sum_{d \le \frac{x}{n}} g(d)
+= \sum_{n \le x} f(n) \sum_{d \le \frac{x}{n}} g(d).
+$$
+
+
+## Recap of Theorem 3.10
+
+$$
+H(x)
+= \sum_{n \le x} f(n) G\left( \frac{x}{n} \right)
+= \sum_{n \le x} f(n) \sum_{d \le \frac{x}{n}} g(d).
+$$
+
+  </section>
+</div>
+</textarea>

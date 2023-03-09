@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Equation (6) in the Proof of Euler's Summation Formula</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Equation (6) in the Proof of Euler's Summation Formula
+
+\begin{align*}
+\sum_{y < n \le x} f(n)
+& = - \int_{m + 1}^k [t] f'(t) \, dt + k f(k) - m f(m + 1) \\
+& = \left( - \int_y^{m + 1} [t] f'(t) \, dt
+    - \int_{m + 1}^k [t] f'(t) \, dt
+    - \int_k^x [t] f'(t) \, dt \right)
+    + f(k) - m f(m + 1)
+    + \int_y^{m + 1} [t] f'(t) \, dt
+    + \int_k^x [t] f'(t) \, dt \\
+& = - \int_y^x [t] f'(t) \, dt + k f(k) - m f(m + 1)
+    + \int_y^{m + 1} m f'(t) \, dt + \int_k^x k f'(t) \, dt \\
+& = - \int_y^x [t] f'(t) \, dt + k f(k) - m f(m + 1)
+    + \biggl( m f(m + 1) - m f(y) \biggr) + \biggl( k f(x) - k f(k) \biggr) \\
+& = - \int_y^x [t] f'(t) \, dt + k f(x) - m f(y).
+\end{align*}
+</div>
+</textarea>

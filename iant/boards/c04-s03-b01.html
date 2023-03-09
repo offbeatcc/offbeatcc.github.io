@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in the Proof of Abel's Identity</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Steps in the Proof of Abel's Identity
+
+$$
+A(n)
+= a(1) + a(2) + \dots + a(n - 1) + a(n)
+= A(n - 1) + a(n).
+$$
+
+Therefore $ a(n) = A(n) - A(n - 1)$.
+
+---
+
+$$
+\sum_{n=m + 1}^k A(n - 1) f(n)
+= A(m) f(m + 1) + A(m + 1) f(m + 2) + \dots + A(k - 1) f(k)
+= \sum_{n=m}^{k - 1} A(n) f(n + 1).
+$$
+
+---
+
+\begin{align*}
+A(x) f(x) - \int_k^x A(t) f'(t)\, dt
+& = A(k) f(x) - \int_k^x A(k) f'(t)\, dt \\
+& = A(k) f(x) - A(k) \{ f(x) - f(k) \} \\
+& = A(k) f(x) - A(k) f(x) + A(k) f(k) = A(k) f(k).
+\end{align*}
+
+---
+
+\begin{align*}
+A(y) f(y) + \int_y^{m + 1} A(t) f'(t) \, dt
+& = A(m) f(y) + \int_y^{m + 1} A(m) f'(t) \\
+& = A(m) f(y) + A(m) \{ f(m + 1) - f(y) \} \\
+& = A(m) f(y) + A(m) f(m + 1) - A(m) f(y)
+= A(m) f(m + 1).
+\end{align*}
+
+</div>
+</textarea>

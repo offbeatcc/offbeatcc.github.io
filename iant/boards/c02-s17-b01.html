@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bell Series Multiplication and Dirichlet Multiplication</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Power Series Multiplication
+
+$$
+A(x) = \sum_{n=0}^{\infty} a(n) x^n, \quad
+B(x) = \sum_{n=0}^{\infty} b(n) x^n, \quad
+A(x) B(x) = \sum_{n=0}^{\infty} \underbrace{\sum_{k=0}^n a(k) b(n - k)}_{c(n)} x^n.
+$$
+
+# Bell Series Multiplication and Dirichlet Multiplication
+
+$$
+(f * g)_p(x) = f_p(x) g_p(x).
+$$
+
+$$
+f_p(x) = \sum_{n=0}^{\infty} f(p^n) x^n, \quad
+g_p(x) = \sum_{n=0}^{\infty} g(p^n) x^n, \quad
+f_p(x) g_p(x) = \sum_{n=0}^{\infty} \sum_{k=0}^n f(p^k) g(p^{n-k}) x^n.
+$$
+
+$$
+h = f * g = \sum_{d \mid n} f(d) g\left( \frac{n}{d} \right).
+$$
+
+$$
+h_p(x)
+= \sum_{n=0}^{\infty} h(p^n) x^n
+= \sum_{n=0}^{\infty} \sum_{d \mid p^n} f(d) g\left( \frac{p^n}{d} \right) x^n
+= \sum_{n=0}^{\infty} \sum_{k=0}^{n} f(p^k) g(p^{n-k}) x^n.
+$$
+
+</div>
+</textarea>

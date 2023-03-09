@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Apple Division: Iterative Solution</title>
+<script>window.muboard = { texmeURL: "../../../js/texme/texme.js" }; window.texme = { markdownURL: "../../../js/marked/marked.min.js", MathJaxURL: "../../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+
+# Apple Division: Iterative Solution
+
+<section>
+<section>
+
+## Example
+
+### Input
+
+```
+4
+5 9 3 4
+```
+
+### Checking All \( 2^4 \) Possible Divisions
+
+```
+ m   bin         grouping  diff
+--  ----  ---------------  ----
+ 0  0000  - 4 - 3 - 9 - 5   -21
+ 1  0001  - 4 - 3 - 9 + 5   -11
+ 2  0010  - 4 - 3 + 9 - 5    -3
+ 3  0011  - 4 - 3 + 9 + 5     7
+ 4  0100  - 4 + 3 - 9 - 5   -15
+ 5  0101  - 4 + 3 - 9 + 5    -5
+ 6  0110  - 4 + 3 + 9 - 5     3
+ 7  0111  - 4 + 3 + 9 + 5    13
+ 8  1000  + 4 - 3 - 9 - 5   -13
+ 9  1001  + 4 - 3 - 9 + 5    -3
+10  1010  + 4 - 3 + 9 - 5     5
+11  1011  + 4 - 3 + 9 + 5    15
+12  1100  + 4 + 3 - 9 - 5    -7
+13  1101  + 4 + 3 - 9 + 5     3
+14  1110  + 4 + 3 + 9 - 5    11
+15  1111  + 4 + 3 + 9 + 5    21
+```
+
+</section>
+<section>
+
+## Legend
+
+* In the table on the left, if a number is prefixed with a plus sign,
+it belongs to the first group. Otherwise, it belongs to the second group.
+
+* The `diff` column represents the difference \( s_1 - s_2 \) where \(
+s_1 \) is the sum of numbers in the first group and \( s_2 \) is the
+sum of the numbers in the second group.
+
+## Notes
+
+* There are \( 2^n \) ways to choose zero or more elements from a set
+of \( n \) elements.
+
+* For a finite set \( S \) with \( \lvert S \rvert = n \), we have \(
+\lvert \mathcal{P(S)} \rvert = 2^n \).
+
+* Unrelated to this problem, but worth noting:
+\[ \binom{n}{0} + \binom{n}{1} + \dots + \binom{n}{n} = 2^n. \]
+
+</section>
+</section>
+</textarea>

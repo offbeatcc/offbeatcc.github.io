@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Illustration of Theorem 14.4</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Illustration of Theorem 14.4
+
+From Theorem 14.4, we can obtain
+$$
+p(n) = p(n - 1) + p(n - 2) - p(n - 5) - p(n - 7) + \dots
+$$
+
+Using this formula we can compute the values of $ p(n) $ as follows:
+\begin{align*}
+  p(0) &= 1, \\
+  p(1) &= p(0) = 1, \\
+  p(2) &= p(1) + p(0) = 2, \\
+  p(3) &= p(2) + p(1) = 3, \\
+  p(4) &= p(3) + p(2) = 5, \\
+  p(5) &= p(4) + p(3) - p(0) = 7, \\
+  p(6) &= p(5) + p(4) - p(1) = 11, \\
+  p(7) &= p(6) + p(5) - p(2) - p(0) = 15, \\
+  &\;\,\vdots
+\end{align*}
+
+</div>
+</textarea>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>First Equation in Proof of Theorem 12.10</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# First Equation in Proof of Theorem 12.10
+
+From equation (9) we have
+$$
+F(x, s) = \sum_{n=1}^{\infty} \frac{e^{2\pi inx}}{n^s}.
+$$
+
+Substituting $ x = h/k $ we get
+$$
+F\left( \frac{h}{k}, s \right) = \sum_{n=1}^{\infty} \frac{e^{2\pi inh/k}}{n^s}.
+$$
+
+Multiplying both sides by $ \overline{\chi}(h) $ we get
+$$
+  \overline{\chi}(h) F\left( \frac{h}{k}, s \right)
+  = \sum_{n=1}^{\infty} \overline{\chi}(h) e^{2\pi inh/k} n^{-s}.
+$$
+
+Summing on $ h $ on both sides, we get
+$$
+  \sum_{h=1}^k \overline{\chi}(h) F\left( \frac{h}{k}, s \right)
+  = \sum_{h=1}^k \sum_{n=1}^{\infty} \overline{\chi}(h) e^{2\pi inh/k} n^{-s}.
+$$
+
+</div>
+</textarea>

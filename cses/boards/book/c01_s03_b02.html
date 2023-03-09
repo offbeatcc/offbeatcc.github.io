@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Data Type Choices</title>
+<script>window.muboard = { texmeURL: "../../../js/texme/texme.js" }; window.texme = { markdownURL: "../../../js/marked/marked.min.js", MathJaxURL: "../../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<article>
+
+# Data Type Choices
+
+Pedantic Choices (As Per Standard)
+----------------------------------
+
+- For 16-bit integer, choose `short`.
+- For 32-bit integer, choose `long`.
+- For 64-bit integer, choose `long long`.
+
+The problem with the pendantic choice is that for most problems, we
+would end up using long. While long is guaranteed to be at least 32
+bits long, but on Unix or Linux systems with LP64 data model, long is
+64 bits long. So the pedantic choice will lead to overconsumption of
+memory in most cases.
+
+
+Practical Choices (As Per Popular Data Models)
+----------------------------------------------
+
+- For 16-bit integer, choose short.
+- For 32-bit integer, choose int.
+- For 64-bit integer, choose long long.
+
+</article>
+</textarea>

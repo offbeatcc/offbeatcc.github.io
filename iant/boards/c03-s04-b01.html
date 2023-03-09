@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Splitting Integral in Proof of Theorem 3.2</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Integrals in Proof of Theorem 3.2
+
+## Splitting Definite Integral
+
+$$
+\int_1^{\infty} f(t) \, dt = \int_1^{x} f(t) \, dt + \int_x^{\infty} f(t) \, dt.
+\iff
+\int_1^{\infty} f(t) \, dt - \int_x^{\infty} f(t) \, dt = \int_1^x f(t) \, dt.
+$$
+
+
+## Solving Improper Integral
+
+$$
+\int_x^{\infty} \frac{1}{t^2} \, dt
+= \lim_{b \to \infty} \int_x^b \frac{1}{t^2} dt
+= \lim_{b \to \infty} \frac{-1}{t} \Biggr|_x^b
+= \left( \lim_{b \to \infty} \frac{-1}{b} \right) + \frac{1}{x}
+= 0 + \frac{1}{x} = \frac{1}{x}.
+$$
+
+</div>
+</textarea>

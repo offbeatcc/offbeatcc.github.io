@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Some Steps in Proof of Theorem 3.17</title>
+<script>window.muboard = { texmeURL: "../../js/texme/texme.js" }; window.texme = { markdownURL: "../../js/marked/marked.min.js", MathJaxURL: "../../js/mathjax/es5/tex-mml-chtml.js"}</script><script src="../../js/muboard/muboard.js"></script>
+<textarea style="display: none">
+<div class="center">
+
+# Some Steps in Proof of Theorem 3.17
+
+$$
+\sum_{d \le a} \sum_{q \le \frac{x}{d}} f(d) g(q)
+= \sum_{d \le a} f(d) \sum_{q \le \frac{x}{d}} g(q)
+= \sum_{d \le a} f(d) G\left( \frac{x}{d} \right)
+= \sum_{n \le a} f(n) G\left( \frac{x}{n} \right).
+$$
+
+$$
+\sum_{d \le a} \sum_{q \le b} f(d) g(q)
+= \sum_{d \le a} f(d) \sum_{q \le b} g(q)
+= \sum_{d \le a} f(d) G(b)
+= G(b) \sum_{d \le a} f(d)
+= G(b) F(a).
+$$
+
+</div>
+</textarea>
